@@ -6,9 +6,7 @@ using namespace std;
 
 int main()
 {
-    int saldo, no_kegiatan;
-    int wd, bts_saldo, sisa_saldo_wd;
-    int depo, saldo_depo;
+    int saldo, no_kegiatan, wd, bts_saldo, sisa_saldo_wd, depo, saldo_depo, biaya_admin = 500000;
     cout << "Selamat Datang di PNJ BANK\n" << endl;//judul
 
     cout << "Masukkan Saldo : Rp";
@@ -31,14 +29,14 @@ int main()
         if (wd > 5000000) {
             cout << "\nBatas Saldo yang Diambil Hanya Boleh Rp5.000.000!";
         }
-        else if (wd <= 5000000 && wd <= bts_saldo && sisa_saldo_wd < 500000) {
-            sisa_saldo_wd -= 50000;
+        else if (wd <= bts_saldo && sisa_saldo_wd < 500000) {
+            sisa_saldo_wd -= biaya_admin;
             cout << "\nSaldo anda akan dikurangi Rp50.000 untuk biaya admin!";
             cout << "\n\nSilahkan Ambil Duit Anda Sebesar :Rp" << wd;
 
             cout << "\n\nSaldo Akhir : Rp" << sisa_saldo_wd;
         }
-        else if (wd <= 5000000 && wd <= bts_saldo) {
+        else if (wd <= bts_saldo) {
 
             cout << "\nSilahkan Ambil Duit Anda Sebesar :Rp" << wd;
             cout << "\n\nSaldo Akhir : Rp" << sisa_saldo_wd;
