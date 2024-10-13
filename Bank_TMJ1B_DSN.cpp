@@ -1,12 +1,13 @@
 // Dzaky Setya Nugraha (2407421047) TMJ1B 
 
+
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int saldo, no_kegiatan, wd, bts_saldo, sisa_saldo_wd, depo, saldo_depo, biaya_admin = 500000;
+    int saldo, no_kegiatan, wd, bts_saldo, sisa_saldo_wd, depo, saldo_depo, biaya_admin = 50000;
     cout << "Selamat Datang di PNJ BANK\n" << endl;//judul
 
     cout << "Masukkan Saldo : Rp";
